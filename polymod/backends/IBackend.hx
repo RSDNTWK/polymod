@@ -31,8 +31,8 @@ import polymod.backends.PolymodAssetLibrary;
 interface IBackend
 {
     public var polymodLibrary:PolymodAssetLibrary;
-
-    public function init(?params:FrameworkParams):Void;
+	
+    public function init(?params:FrameworkParams):Bool;
     public function destroy():Void;
 
     public function clearCache():Void;
